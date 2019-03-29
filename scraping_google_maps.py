@@ -17,7 +17,7 @@ for i in range(1,40,2): #incrementa de 2 em 2 >> 1,3,5,7......39
   seleciona = driver.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[3]/div['+str(i)+']') #seleciona o primeiro resultado da pesquisa
   seleciona.click() #clica no resultado
   time.sleep(4) #aguarde 4 segundos
-#try and except foi usado para verificar a existencia do elemento dentro da pagina do resultado selecionado
+  #try and except foi usado para verificar a existencia do elemento dentro da pagina do resultado selecionado
   try: #tente encontrar esse elemento
     driver.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[1]/div[3]/div[1]/h1')
   except NoSuchElementException: #se ele não existir atribua o valor 1 para a variavel nome
@@ -41,28 +41,28 @@ for i in range(1,40,2): #incrementa de 2 em 2 >> 1,3,5,7......39
   except NoSuchElementException:
     fone = 1
     pass 
-time.sleep(4)
+  time.sleep(4)
 
-#if else foi utilizado para validar a variavel e ver se ela possui um elemento Xpath ou o numero 1
+  #if else foi utilizado para validar a variavel e ver se ela possui um elemento Xpath ou o numero 1
 
-if nome == 1: #se a variavel nome for igual a 1
-  print("vazio") #escreva vazio
-else: #caso contrario
-  print(nome.text) #escreva o texto que foi capturado do elementro Xpath
-if endereco == 1:
-  print("vazio")
-else:
-  print(endereco.text)
-if site == 1:
-  print("vazio")
-else:
-  print(site.text)
-if fone == 1 :
-  print("vazio")
-else:
-  print(fone.text)
+  if nome == 1: #se a variavel nome for igual a 1
+    print("vazio") #escreva vazio
+  else: #caso contrario
+    print(nome.text) #escreva o texto que foi capturado do elementro Xpath
+  if endereco == 1:
+    print("vazio")
+  else:
+    print(endereco.text)
+  if site == 1:
+    print("vazio")
+  else:
+    print(site.text)
+  if fone == 1 :
+    print("vazio")
+  else:
+    print(fone.text)
 
-time.sleep(4)
-volta_resultados = driver.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/button') #encontra o link Voltar para os resultados
-volta_resultados.click() #clica no link
-time.sleep(5)
+  time.sleep(4)
+  volta_resultados = driver.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/button') #encontra o link Voltar para os resultados
+  volta_resultados.click() #clica no link
+  time.sleep(5)
