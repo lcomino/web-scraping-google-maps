@@ -13,7 +13,6 @@ Biblioteca    | Baixar        | pip
 selenium      | [Download](https://pypi.org/project/selenium/)                       | pip install selenium
 pyautogui     | [Download](https://pyautogui.readthedocs.io/en/latest/install.html)  | pip install PyAutoGUI
 time          | [Documentação](https://docs.python.org/3/library/time.html)          | --
-sys           | [Documentação](https://docs.python.org/3/library/sys.html)           | --
 
 ## Instruções
 1. Clone o repositório
