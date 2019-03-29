@@ -1,5 +1,4 @@
 # Web Scraping - Google Maps
-Projeto >> E-book Web Scraping - Hands on
 
 A aplicação acessa o google maps, realiza uma pesquisa e captura os dados de cada resultado da pesquisa.
 
