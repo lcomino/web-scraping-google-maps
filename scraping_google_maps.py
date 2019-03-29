@@ -17,7 +17,9 @@ for i in range(1,40,2): #incrementa de 2 em 2 >> 1,3,5,7......39
   seleciona = driver.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[3]/div['+str(i)+']') #seleciona o primeiro resultado da pesquisa
   seleciona.click() #clica no resultado
   time.sleep(4) #aguarde 4 segundos
+  
   #try and except foi usado para verificar a existencia do elemento dentro da pagina do resultado selecionado
+  
   try: #tente encontrar esse elemento
     driver.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[1]/div[3]/div[1]/h1')
   except NoSuchElementException: #se ele não existir atribua o valor 1 para a variavel nome
